@@ -81,7 +81,8 @@ img {
     font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
-    padding: .8rem .8rem;
+    border: 1px solid none;
+    padding: .8rem 3rem;
     transition: .8s;
 }
 
@@ -166,13 +167,10 @@ div.barra-responsive a.barras:hover {
     cursor: pointer;
 }
 
-div.barra-responsive h1 {
-    color: #80A2D2;
+div.barra-responsive a.logo {
+    width: 40%;
 }
 
-div.barra-responsive h1 span {
-    color: #CBDBEF;
-}
 
 @media (min-width: 768px) {
     div.barra {
@@ -184,35 +182,37 @@ div.barra-responsive h1 span {
     div.barra-responsive a.barras {
         display: none;
     }
+
+    div.barra-responsive a.logo {
+    width: 25%;
+	}
 }
 
 nav.navegacion {
     text-align: center;
-    margin-top: 3rem;
+    border:1px solid #f1f1f1;
     display: none;
 }
 
 nav.navegacion a {
     display: block;
-    line-height: 6rem;
+    line-height: 4rem;
 }
 
 @media (min-width: 768px) {
     nav.navegacion {
+    	flex: 1 1 calc(70%);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0;
+        margin-right:3rem;
+        border:none;
     }
 
     nav.navegacion a {
-        margin-right: 2rem;
+    	flex: 1 1 calc(33.3%);
+    	padding: 0 3rem;
         line-height: 2rem;
-
-    }
-
-    nav.navegacion a:last-of-type {
-        margin-right: 0;
     }
 
 }
@@ -295,9 +295,10 @@ div.imagen-nosotros {
 /*Sección Principal Servicios*/
 
 main.seccion-principal {
-    margin-top: 3rem;
     background-color: #C8BB8B;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    height: 75rem;
+    margin-top: 3rem;
     padding: 3rem;
     -webkit-box-shadow: 3px 2px 9px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow: 3px 2px 9px 0px rgba(50, 50, 50, 0.75);
@@ -319,7 +320,7 @@ main.seccion-principal h2 {
 }
 
 main.seccion-principal a {
-    margin: 4rem;
+    margin:4rem;
 
 }
 
@@ -523,4 +524,12 @@ div.icono-contacto p {
     margin-bottom: 3rem;
     font-size: 2.5rem;
     color: #F0D571;
+}
+
+/*Paginas Internas*/
+
+/*Navegación Interna*/
+
+section.barra-interna{
+	background-color: #353535;
 }
