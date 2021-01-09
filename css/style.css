@@ -81,8 +81,9 @@ img {
     font-weight: 700;
     font-size: 2rem;
     text-transform: uppercase;
-    border: 1px solid none;
+    border: 1px solid transparent;
     padding: .8rem 3rem;
+    margin-right: 2rem; 
     transition: .8s;
 }
 
@@ -168,6 +169,7 @@ div.barra-responsive a.barras:hover {
 }
 
 div.barra-responsive a.logo {
+	margin-top: 1rem;
     width: 40%;
 }
 
@@ -184,13 +186,13 @@ div.barra-responsive a.logo {
     }
 
     div.barra-responsive a.logo {
-    width: 25%;
-	}
+        width: 25%;
+    }
 }
 
 nav.navegacion {
     text-align: center;
-    border:1px solid #f1f1f1;
+    border: 1px solid #f1f1f1;
     display: none;
 }
 
@@ -201,17 +203,17 @@ nav.navegacion a {
 
 @media (min-width: 768px) {
     nav.navegacion {
-    	flex: 1 1 calc(70%);
+        flex: 1 1 calc(70%);
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-right:3rem;
-        border:none;
+        margin-right: 3rem;
+        border: none;
     }
 
     nav.navegacion a {
-    	flex: 1 1 calc(33.3%);
-    	padding: 0 3rem;
+        flex: 1 1 calc(33.3%);
+        padding: 0 3rem;
         line-height: 2rem;
     }
 
@@ -297,7 +299,7 @@ div.imagen-nosotros {
 main.seccion-principal {
     background-color: #C8BB8B;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    height: 75rem;
+    height: auto;
     margin-top: 3rem;
     padding: 3rem;
     -webkit-box-shadow: 3px 2px 9px 0px rgba(50, 50, 50, 0.75);
@@ -320,7 +322,7 @@ main.seccion-principal h2 {
 }
 
 main.seccion-principal a {
-    margin:4rem;
+    margin: 4rem;
 
 }
 
@@ -363,15 +365,15 @@ div.servicio i {
     font-size: 10rem;
 }
 
-div.servicio i.salud {
+i.salud {
     color: #DE1414;
 }
 
-div.servicio i.edificio {
+i.edificio {
     color: #167BDA;
 }
 
-div.servicio i.regalo {
+i.regalo {
     color: #1ED90F;
 }
 
@@ -461,7 +463,7 @@ div.galeria-texto p span {
 section.contacto {
     margin: 6rem 0;
     position: relative;
-    height: 40rem;
+    height: auto;
     display: flex;
 }
 
@@ -486,7 +488,7 @@ section.contacto::before {
 
 div.tabla-contactos {
     text-align: center;
-    padding: 4rem 0;
+    padding: 10rem 0;
     position: relative;
     flex: 1;
 }
@@ -506,7 +508,7 @@ div.tabla-contactos {
 }
 
 div.icono-contacto {
-   transition:.4s;
+    transition: .4s;
 }
 
 
@@ -516,8 +518,8 @@ div.icono-contacto i {
     transition: all 1s ease;
 }
 
-div.icono-contacto i:hover{
-	 transform: scale(1.5);
+div.icono-contacto i:hover {
+    transform: scale(1.5);
 }
 
 div.icono-contacto p {
@@ -530,6 +532,57 @@ div.icono-contacto p {
 
 /*Navegación Interna*/
 
-section.barra-interna{
-	background-color: #353535;
+section.barra-interna {
+    background-color: #353535;
+}
+
+/*Galeria Interna*/
+
+@media (min-width: 768px) {
+    div.galeria-interna {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/*Servicios Internos*/
+
+main.servicios-internos h2 {
+    text-align: center;
+}
+
+div.servicio-unico {
+    text-align: center;
+    border: 1px solid #f1f1f1;
+    margin: 3rem auto;
+    padding: 3rem 0;
+    -webkit-box-shadow: 5px 3px 10px 0px rgba(255, 50, 50, 0.68);
+    -moz-box-shadow: 5px 3px 10px 0px rgba(255, 50, 50, 0.68);
+    box-shadow: 5px 3px 10px 0px rgba(255, 50, 50, 0.68);
+    transition: ease 1s all;
+}
+
+div.servicio-unico:hover {
+    transform: scale(1.1);
+    border: 1px solid #C8BB8B;
+    -webkit-box-shadow: 5px 3px 10px 0px rgba(48, 50, 255, 0.68);
+    -moz-box-shadow: 5px 3px 10px 0px rgba(48, 50, 255, 0.68);
+    box-shadow: 5px 3px 10px 0px rgba(48, 50, 255, 0.68);
+}
+
+div.servicio-unico h3 {
+    border-bottom: 1px solid #C8BB8B;
+}
+
+
+div.servicio-unico i {
+    font-size: 8rem;
+}
+
+div.servicio-unico ul {
+    text-align: left;
+}
+
+div.servicio-unico ul li {
+    font-size: 2rem;
+    line-height: 4rem;
 }
