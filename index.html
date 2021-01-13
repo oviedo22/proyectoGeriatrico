@@ -11,13 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans:ital@0;1&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/ce4b0e445d.js" crossorigin="anonymous"></script>
-    <!-- <script>
+    <script>
     document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
-    </script> -->
+    </script>
 </head>
 
 <body>
@@ -44,15 +45,23 @@
     <!--navegación principal-->
     <section class="contenedor seccion-nosotros">
         <h1>Geriátrico Abuela Angelina</h1>
+        <i class="fas fa-hand-holding-heart"></i>
         <div class="nosotros">
             <div class="texto-nosotros">
                 <p>"<span>Abuela Angelina</span> es una de las pocas residencias que hasta el día de la fecha es atendida por su dueño,
                     <span>Enrique</span>, quien nombró a este espacio bajo el nombre de una persona muy querida, y recordada por su familia, como una mujer simpática y adorable. Su legado de cuidado y dedicación, son los valores que dejaron una huella
-                    en este hogar. Enrique cuenta con <span>más de 4 décadas de experiencia</span> en el cuidado de sus residentes, caracterizado por su gran vocación de servicio y por su habilidad de comprender las necesidades de quienes llegan a Abuela
-                    Angelina como también de acompañar y empatizar con sus familiares."</p>
+                    en este hogar".</p>
+            </div>
+            <div class="separador">
             </div>
             <div class="imagen-nosotros">
                 <img src="img/seccion-nosotros.jpeg" alt="Abuelos">
+            </div>
+            <div class="separador">
+            </div>
+            <div class="variante">
+                <p> "Enrique cuenta con más de 4 décadas de experiencia en el cuidado de sus residentes, caracterizado por su gran vocación de servicio y por su habilidad de comprender las necesidades de quienes llegan a Abuela
+                    Angelina como también de acompañar y empatizar con sus familiares."</p>
             </div>
         </div>
     </section>
@@ -61,19 +70,19 @@
         <h2>Nuestros Servicios</h2>
         <div class="tabla-servicios contenedor">
             <div class="servicio">
-                <i class="fas fa-comment-medical salud"></i>
+                <i class="fas fa-comment-medical "></i>
                 <h3>Servicios de Salud</h3>
                 <p>Contamos con distintos profesionales altamente capacitados para brindar los servicios medicos y de cuidado escenciales que requieren nuestros abuelos para poder llevar a cabo su dia a dia con comodidad y sintiéndose plenos.</p>
             </div>
             <div class="servicio">
-                <i class="fas fa-building edificio"></i>
+                <i class="fas fa-building"></i>
                 <h3>Servicios de Acomodación</h3>
                 <p>
                     Nuestra casa cuenta con dos plantas, ventanales y altas puertas que conservan un aire no solamente encantador sino también cómodo. Contamos con 5 baños, un ascensor como solución para nuestros residentes y con un gran jardín.
                 </p>
             </div>
             <div class="servicio">
-                <i class="fas fa-gifts regalo"></i>
+                <i class="fas fa-gifts"></i>
                 <h3>Servicios Generales</h3>
                 <p>Brindamos servicios generales para el óptimo desarrollo de nuestros abuelos tales como juegos lúdicos, distintos tipos de fiestas temáticas, servicios tecnológicos como wifi e incluso, atención estética. </p>
             </div>
@@ -82,42 +91,42 @@
     </main>
     <!--seccion servicios-->
     <section class="contenedor-mapa">
-        <h2>¿Dónde nos encontramos? <i class="fas fa-map-marker-alt"></i>
-
-
-        </h2>
-        <p>La casa se encuentra ubicada entre dos plazas, en sus cercanías hay un espacio de juegos agradable al que pueden acercarse aprovechando el ambiente como distracción y un buen momento al aire libre. Está a 10 minutos del centro y en la puerta presenta
-            una parada de micros con varias líneas.</p>
-
-        <section id="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13092.660713555826!2d-56.201520663719144!3d-34.87719828788682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80039adc6c65%3A0xa07404ba6219b0ed!2sAv.%20Agraciada%203002%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2sar!4v1609853986309!5m2!1ses!2sar"
-                width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div class="texto-mapa">
+            <h2>¿Dónde nos encontramos? <i class="fas fa-map-marker-alt"></i>
+            </h2>
+            <p>La casa se encuentra ubicada entre dos plazas, en sus cercanías hay un espacio de juegos agradable al que pueden acercarse aprovechando el ambiente como distracción y un buen momento al aire libre. </p>
+            <div class="separador"></div>
+            <p>Está a 10 minutos del centro y en la puerta presenta
+                una parada de micros con varias líneas.</p>
+        </div>
+        <section class="mapa contenedor" id="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13092.660713555826!2d-56.201520663719144!3d-34.87719828788682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80039adc6c65%3A0xa07404ba6219b0ed!2sAv.%20Agraciada%203002%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2sar!4v1609853986309!5m2!1ses!2sar" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </section>
     </section>
     <!--seccion mapa-->
     <section class="contenedor galeria-index">
         <h2>Galería de imagenes <i class="fas fa-images"></i></h2>
-        <div class="galeria-flex contenedor">
-            <div class="galeria">
-                <a href="img/servicio1.jpg" data-lightbox="galeria">
-                    <img src="img/servicio1.jpg">
-                </a>
-                <a href="img/servicio1.jpg" data-lightbox="galeria">
-                    <img src="img/servicio1.jpg">
-                </a>
-                <a href="img/servicio1.jpg" data-lightbox="galeria">
-                    <img src="img/servicio1.jpg">
-                </a>
-                <a href="img/servicio1.jpg" data-lightbox="galeria">
-                    <img src="img/servicio1.jpg">
-                </a>
-            </div>
-            <div class="galeria-texto">
-                <p>El equipo de trabajo es parte de un engranaje, indispensable y profesional, que junto a Enrique mantienen los pilares primordiales de la vocación de servicio y un trato digno, o como ellos dicen: <span>“Somos gente que cuidamos gente”</span>.
-                    Cada persona que llega a Abuela Angelina es diferente, y aquí es donde nuestro equipo se destaca, priorizando siempre las necesidades de cada uno, desde su salud física hasta lo emocional.
-                </p>
-                <a class="boton-secundario" href="galeria.html">Ver más</a>
-            </div>
+        <div class="galeria">
+            <a href="img/servicio1.jpg" data-lightbox="galeria">
+                <img src="img/servicio1.jpg">
+            </a>
+            <a href="img/servicio1.jpg" data-lightbox="galeria">
+                <img src="img/servicio1.jpg">
+            </a>
+            <a href="img/servicio1.jpg" data-lightbox="galeria">
+                <img src="img/servicio1.jpg">
+            </a>
+            <a href="img/servicio1.jpg" data-lightbox="galeria">
+                <img src="img/servicio1.jpg">
+            </a>
+        </div>
+        <div class="separador">
+        </div>
+        <div class="galeria-texto">
+            <p>El equipo de trabajo es parte de un engranaje, indispensable y profesional, que junto a Enrique mantienen los pilares primordiales de la vocación de servicio y un trato digno, o como ellos dicen: <span>“Somos gente que cuidamos gente”</span>.
+                Cada persona que llega a Abuela Angelina es diferente, y aquí es donde nuestro equipo se destaca, priorizando siempre las necesidades de cada uno, desde su salud física hasta lo emocional.
+            </p>
+            <a class="boton-secundario" href="galeria.html">Ver más</a>
         </div>
     </section>
     <!--seccion galeria index-->
@@ -142,27 +151,18 @@
         <a href="https://wa.me/2614703370">
             <img src="img/whatsapp.png">
             <p>Comunicate con nosotros.</p>
-
         </a>
-
     </seccion>
     <!--Boton wpp-->
-
     <footer class="footer">
         <div class="footer-contenido contenedor">
             <div class="informacion">
-
                 <p>Dirección: <span>Avenida Agraciada 3002,Montevideo, Departamento de Montevideo, Uruguay
-                    .</span></p>
-
+                        .</span></p>
                 <p>Teléfono: <span>155555555555</span></p>
-
             </div>
-
             <div class="minimapa">
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13092.660713555826!2d-56.201520663719144!3d-34.87719828788682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80039adc6c65%3A0xa07404ba6219b0ed!2sAv.%20Agraciada%203002%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2sar!4v1609853986309!5m2!1ses!2sar"
-                    width="500" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13092.660713555826!2d-56.201520663719144!3d-34.87719828788682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80039adc6c65%3A0xa07404ba6219b0ed!2sAv.%20Agraciada%203002%2C%2011800%20Montevideo%2C%20Departamento%20de%20Montevideo%2C%20Uruguay!5e0!3m2!1ses!2sar!4v1609853986309!5m2!1ses!2sar" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </div>
         </div>
         <div class="footer2">
@@ -170,7 +170,6 @@
                 Todos los derechos reservados Residencial Abuela Angelina &copy;
                 <br> Copyright © 2021.
             </p>
-
         </div>
     </footer>
     <!-- footer -->
@@ -179,6 +178,5 @@
     <script src="js/lightbox-plus-jquery.min.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
 </body>
-
 
 </html>
