@@ -2,6 +2,7 @@
 
 .carousel {
     min-height: 400px;
+    margin: 4rem auto;
 }
 
 .carousel .carousel-item {
@@ -29,6 +30,6 @@
 .carousel .indicators .indicator-item {
     border-radius: 0;
     transform: rotate(45deg);
-    margin: 0 15px;
-    background: #36221c;
+    margin: 1rem 15px;
+    background: #FF9200;
 }

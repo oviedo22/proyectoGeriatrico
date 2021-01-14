@@ -24,6 +24,7 @@
       --color-cinco: #DFE599;
       --color-seis: #b9afa1;
       --color-siete: #D4BF76;
+      --color-ocho:#9E9991;
 
   }
 
@@ -230,6 +231,8 @@
       text-align: center;
       border: 1px solid #f1f1f1;
       display: none;
+      background: none;
+      box-shadow: none;
   }
 
   nav.navegacion a {
@@ -302,12 +305,12 @@
       font-weight: 400;
       color: #DBB530;
       text-transform: Uppercase;
-      margin: 10rem auto 5rem auto;
+      margin: 7rem auto 5rem auto;
   }
 
-  section.seccion-nosotros i{
-    font-size: 5rem;
-    color:var(--color-siete);
+  section.seccion-nosotros i {
+      font-size: 5rem;
+      color: var(--color-siete);
   }
 
   div.texto-nosotros {
@@ -354,7 +357,7 @@
       font-family: 'PT Sans', serif;
       font-style: italic;
       font-weight: 600;
-      color: var(--color-dos);
+      color: var(--color-ocho);
   }
 
   @media (min-width: 768px) {
@@ -382,6 +385,7 @@
       text-align: center;
       font-weight: 400;
       margin: 2rem auto;
+      color: var(--color-dos);
   }
 
   @media (min-width: 768px) {
@@ -392,6 +396,13 @@
 
   main.seccion-principal a {
       margin: 4rem;
+      background-color: var(--color-siete);
+      border:none;
+  }
+
+   main.seccion-principal a:hover {
+      background-color: var(--color-cuatro);
+      border:none;
   }
 
   div.servicio {
@@ -453,23 +464,34 @@
 
   section.galeria-index {
       padding: 2rem;
-      border-radius: .8rem;
+      background-color: #E3CFB0;
+      text-align: center;
+      -webkit-box-shadow: 0px -9px 14px 0px rgba(50, 50, 50, 0.71);
+      -moz-box-shadow: 0px -9px 14px 0px rgba(50, 50, 50, 0.71);
+      box-shadow: 0px -9px 14px 0px rgba(50, 50, 50, 0.71);
+
   }
 
   section.galeria-index h2 {
       text-align: center;
-      color: var(--color-cuatro);
-      margin-top: 1rem;
-      margin-bottom: 3rem;
-      border-bottom: 1px solid var(--color-cuatro);
+      color: var(--color-dos);
+      font-weight: 400;
+      margin: 1rem auto 3rem auto;
+      border: none;
+  }
+
+  section.galeria-index i {
+      margin-left: 2rem;
+      font-size: 4rem;
+      color:#D67D05;
   }
 
   section.galeria-index a:hover {
-      background-color: #C8BB8B;
-      border: 1px solid #80A2D2;
+      background-color: var(--color-seis);
   }
 
   div.galeria {
+      margin: 5rem auto;
       padding: 2rem 3rem;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -477,22 +499,10 @@
       row-gap: 3rem;
   }
 
-  @media (min-width: 768px) {
-      div.galeria {
-          grid-template-columns: repeat(4, 1fr);
-
-      }
-  }
 
   div.galeria a {
       overflow: hidden;
-      border: 1px solid #f1f1f1;
       transition: 1s;
-  }
-
-  div.galeria a:hover {
-      transform: scale(1.1);
-      border: none;
   }
 
   div.galeria-texto {
@@ -500,16 +510,22 @@
   }
 
   div.galeria-texto p {
-      font-family: 'PT Sans', sans-serif;
+      font-family: 'Libre Baskerville', serif;
       font-style: italic;
       text-align: center;
       font-weight: 400;
       font-size: 2rem;
-      line-height: 3rem;
+      line-height: 5rem;
+      margin: 5rem auto;
+      color: var(--color-dos);
   }
 
   div.galeria-texto p span {
-      color: #4B70A3;
+      color: #000000;
+  }
+
+  div.galeria-texto a {
+      margin-bottom: 5rem;
   }
 
   div.galeria-flex {
@@ -560,10 +576,19 @@
   /*Contacto*/
 
   section.contacto {
-      margin: 6rem 0;
+      margin: 0 0 6rem 0;
       position: relative;
       height: auto;
       display: flex;
+      -webkit-box-shadow: 1px 9px 26px 0px rgba(50, 50, 50, 0.71);
+      -moz-box-shadow: 1px 9px 26px 0px rgba(50, 50, 50, 0.71);
+      box-shadow: 1px 9px 26px 0px rgba(50, 50, 50, 0.71);
+  }
+
+  @media (min-width: 768px) {
+      section.contacto {
+          height: 50rem;
+      }
   }
 
   section.contacto::before {
@@ -592,7 +617,6 @@
       flex: 1;
   }
 
-  /*Contacto*/
 
   @media (min-width: 768px) {
       div.tabla-contactos {
@@ -634,39 +658,50 @@
 
   section.contenedor-mapa {
       text-align: center;
-      margin-bottom: 5rem;
-      padding: 3rem;
-      background-color: var(--color-seis);
+      margin: 5rem auto;
+      padding: 4rem;
 
   }
 
   @media (min-width: 768px) {
-    section.contenedor-mapa {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+      section.contenedor-mapa {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
 
-  }
+      }
 
-    div.texto-mapa{
-      flex: 1 1 calc(60% - 1rem);
-      margin-right: 4rem;
-    }
+      div.texto-mapa {
+          flex: 1 1 calc(60% - 1rem);
+          margin-right: 4rem;
+      }
 
-    div.mapa{
-      flex:1 1 calc(40% - 1rem);
-    }
+      div.mapa {
+          flex: 1 1 calc(40% - 1rem);
+      }
   }
 
   div.texto-mapa h2 {
-      color: var(--color-cinco);
+      color: var(--color-dos);
       font-weight: 400;
       border-bottom: 1px solid var(--color-cuatro);
   }
 
   div.texto-mapa p {
       font-family: 'Libre Baskerville', serif;
-      color: var(--color-cuatro);
+      color: var(--color-seis);
+      line-height: 3rem;
+  }
+
+  div.texto-mapa p:last-of-type {
+      color: var(--color-siete);
+      line-height: 3rem;
+  }
+
+  @media (min-width: 768px) {
+      div.texto-mapa p {
+          line-height: 4rem;
+      }
   }
 
 
@@ -701,7 +736,7 @@
 
 
   footer {
-      background: #80A2D2;
+      background: var(--color-cinco);
       height: auto;
       text-align: center;
   }
@@ -733,7 +768,7 @@
   }
 
   .footer2 {
-      background: #CBDCF0;
+      background: var(--color-uno);
       height: 5rem;
       width: 100%;
       text-align: center;
@@ -746,8 +781,8 @@
 
   div.footer2 p {
       margin: 0;
-      font-weight: 700;
-      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-family: 'Libre Baskerville', serif;
       color: darkslategray;
   }
 
@@ -757,18 +792,19 @@
 
   div.informacion p {
       color: darkslategray;
-      font-weight: 700;
-      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      font-family: 'Libre Baskerville', serif;
       font-size: 2.5rem;
       text-align: left;
   }
 
-  div.informacion span {
+  div.informacion p span {
       font-size: 2.5rem;
-      color: #F0D571;
-      font-weight: 700;
-      font-family: 'Roboto', sans-serif;
+      color: var(--color-cuatro);
+      font-weight: 500;
+      font-family: 'Libre Baskerville', serif;
       font-size: 2rem;
+      font-style: italic;
       text-align: center;
   }
 
@@ -787,7 +823,7 @@
       }
   }
 
-  /*Servicios Internos*/
+/*Servicios Internos*/
 
   main.servicios-internos h2 {
       text-align: center;
@@ -872,9 +908,6 @@
       color: #EA4335;
   }
 
-  .fa-images {
-      color: #167BDA;
-  }
 
   /*Nosotros*/
 
