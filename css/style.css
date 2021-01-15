@@ -802,65 +802,64 @@
   }
   /*Servicios Internos*/
   
-  main.servicios-internos h2 {
+   main.servicios-internos h2 {
       text-align: center;
+      color:var(--color-dos);
+      font-weight: 400;
   }
-  
+
   div.servicio-unico {
       background-color: #ffffff;
       text-align: center;
       border: 1px solid #f1f1f1;
       margin: 3rem auto;
-      padding: 3rem 0;
-      -webkit-box-shadow: 5px 3px 10px 0px rgba(255, 50, 50, 0.68);
-      -moz-box-shadow: 5px 3px 10px 0px rgba(255, 50, 50, 0.68);
-      box-shadow: 5px 3px 10px 0px rgba(255, 50, 50, 0.68);
-      transition: ease 1s all;
+      padding: 2rem 0;
+      -webkit-box-shadow: 5px 3px 16px 0px rgba(50, 50, 50, 1);
+      -moz-box-shadow: 5px 3px 16px 0px rgba(50, 50, 50, 1);
+      box-shadow: 5px 3px 16px 0px rgba(50, 50, 50, 1);
   }
-  
-  div.servicio-unico:hover {
-      transform: scale(1.1);
-      border: 1px solid #C8BB8B;
-      -webkit-box-shadow: 5px 3px 10px 0px rgba(48, 50, 255, 0.68);
-      -moz-box-shadow: 5px 3px 10px 0px rgba(48, 50, 255, 0.68);
-      box-shadow: 5px 3px 10px 0px rgba(48, 50, 255, 0.68);
-  }
-  
+
   div.servicio-unico h3 {
-      border-bottom: 1px solid #C8BB8B;
+      font-family: 'Libre Baskerville',serif;
+      font-weight: 700;
+      color:var(--color-cuatro);
   }
-  
+
   div.servicio-unico i {
       font-size: 8rem;
+      color:var(--color-uno);
   }
-  
+
   div.servicio-unico ul {
       text-align: left;
-      padding: 6rem;
+      padding: 3rem;
   }
-  
+
   div.servicio-unico ul li {
       font-size: 2rem;
       line-height: 4rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border: 1px solid #273746;
+      border: 1px solid var(--color-seis);
       border-radius: .8rem;
       padding: 1.5rem;
       margin-top: 2rem;
       transition: 1s all ease;
+
   }
-  
+
   div.servicio-unico ul li:hover {
       transform: scale(1.1);
       border: 1px solid #E74C3C;
   }
-  
+
+
   div.servicio-unico ul li p {
+      color:var(--color-ocho);
       flex: 1 1 calc(90%);
   }
-  
+
   div.servicio-unico ul li i {
       margin: 2rem auto;
       padding: 0 4rem;
@@ -869,6 +868,7 @@
       flex: 1 1 calc(10%);
       color: #273746;
   }
+
   /*Navegación Interna*/
   
   section.barra-interna {
@@ -933,11 +933,11 @@
   section.cita-container {
       margin-top: 5rem;
       background-color: #5f9ea0;
-      height: 30rem;
+      height: auto;
   }
   
   div.cita {
-      padding: 5rem 0 0 0;
+      padding: 5rem 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -952,7 +952,7 @@
   div.cita blockquote {
       font-size: 4rem;
       font-weight: 700;
-      line-height: 2rem;
+      line-height: 6rem;
       color: #ffffff;
       text-align: center;
   }
