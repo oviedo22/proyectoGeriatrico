@@ -35,11 +35,10 @@
   }
 
   h2 {
-      font-family: 'Libre Baskerville', serif;
-      font-style: italic;
-      font-size: 3.4rem;
+      font-family: 'Bebas Neue', serif;
+      font-size: 6rem;
       text-transform: uppercase;
-      border-bottom: 1px solid #D4BF76;
+      border-bottom: 1px solid var(--color-nueve);
   }
 
   h3 {
@@ -94,7 +93,7 @@
   }
 
   .boton-primario {
-      color: #D4BF76;
+      color: var(--color-nueve);
       font-weight: 700;
       font-size: 2rem;
       text-transform: uppercase;
@@ -141,18 +140,29 @@
   }
 
   div.separador {
-      background-color: var(--color-uno);
+      background-color: #ffffff;
       width: 40%;
       height: 1px;
       margin: 0 auto;
   }
 
+    .parallax::before {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-filter: brightness(0.8);
+      filter: brightness(0.4);
+  }
+
   /*Header*/
 
   section.navegacion-principal {
-      background: url(../img/fondo.jpg);
-      background-position: center center;
-      background-size: cover;
       height: 100vh;
       min-height: 60rem;
       display: flex;
@@ -164,15 +174,11 @@
       box-shadow: 0px 9px 14px 0px rgba(50, 50, 50, 0.71);
   }
 
-  section.navegacion-principal:before {
+  section.navegacion-principal::before {
+      background-image: url(../img/fondo.jpg);
       content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background-color: rgba(0, 0, 0, 0.5);
   }
+
 
   div.barra {
       position: relative;
@@ -278,8 +284,8 @@
   }
 
   div.texto-header p {
-      font-size: 2.8rem;
-      font-family: 'PT Sans', sans-serif;
+      font-size: 2.1rem;
+      font-family: 'Montserrat', sans-serif;
       font-style: italic;
       color: var(--color-siete);
       text-align: right;
@@ -287,7 +293,7 @@
 
   @media (min-width: 768px) {
       div.texto-header p {
-          font-size: 3.5rem;
+          font-size: 3rem;
       }
   }
 
@@ -298,16 +304,6 @@
       text-align: center;
   }
 
-  /*
-  section.seccion-nosotros h1 {
-      font-family: 'Libre Baskerville', serif;
-      font-weight: 400;
-      color: #DBB530;
-      text-transform: Uppercase;
-      margin: 7rem auto 5rem auto;
-  }
-
-  */
 
   section.seccion-nosotros h1 {
       font-family: 'Bebas Neue', serif;
@@ -318,9 +314,9 @@
       margin: 7rem auto 5rem auto;
   }
 
-  section.seccion-nosotros i {
-      font-size: 5rem;
-      color: var(--color-siete);
+  section.seccion-nosotros img.flor {
+      width: 15%;
+      margin: 0 auto;
   }
 
   div.texto-nosotros {
@@ -451,10 +447,10 @@
       color: var(--color-dos);
   }
 
-  div.servicio-index i {
-      padding-top: 3rem;
-      color: var(--color-dos);
-      font-size: 7rem;
+  div.servicio-index img.icon-serv{
+      padding-top: 1rem;
+      width: 40%;
+      margin: 0 auto;
   }
 
 
@@ -470,7 +466,7 @@
   /*Seccion Principal Servicios Interno*/
 
   main.seccion-principal {
-      background-color: var(--color-cinco);
+      background-color: var(--color-nueve);
       height: auto;
       margin-top: 3rem;
       padding: 3rem;
@@ -483,8 +479,8 @@
   main.seccion-principal h2 {
       text-align: center;
       font-weight: 400;
+      font-size: 6rem;
       margin: 2rem auto;
-      color: var(--color-dos);
   }
 
   @media (min-width: 768px) {
@@ -528,25 +524,26 @@
   }
 
   div.servicio h3 {
+      font-size: 2rem;
       color: var(--color-dos);
   }
 
   div.servicio i {
-      color: var(--color-siete);
+      color: var(--color-dos);
       font-size: 7rem;
   }
 
 
   div.servicio p {
       font-family: 'Libre Baskerville', serif;
-      color: var(--color-cuatro);
+      color: var(--color-dos);
   }
 
   /* Mapa */
 
   section.contenedor-mapa {
       text-align: center;
-      margin: 5rem auto;
+      margin: 3rem auto;
       padding: 4rem;
   }
 
@@ -570,16 +567,19 @@
   div.texto-mapa h2 {
       color: var(--color-dos);
       font-weight: 400;
+      font-size:5rem;
       border-bottom: 1px solid var(--color-cuatro);
   }
 
   div.texto-mapa p {
-      font-family: 'Libre Baskerville', serif;
+     
+      font-family:'Montserrat', serif;
       color: var(--color-seis);
       line-height: 3rem;
   }
 
   div.texto-mapa p:last-of-type {
+      font-family: 'Libre Baskerville', serif;
       color: var(--color-siete);
       line-height: 3rem;
   }
@@ -593,8 +593,7 @@
   /*Info Covid*/
 
   section.info-covid {
-      background-color: #000000;
-      margin-bottom: 6rem;
+      background-color: var(--color-dos);
       -webkit-box-shadow: 0px 1px 30px 0px rgba(50, 50, 50, 1);
       -moz-box-shadow: 0px 1px 30px 0px rgba(50, 50, 50, 1);
       box-shadow: 0px 1px 30px 0px rgba(50, 50, 50, 1);
@@ -606,10 +605,19 @@
   }
 
   div.texto-covid h2 {
-      font-family: 'PT Sans', sans-serif;
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 6rem;
       font-weight: 600;
+      text-align: center;
+      margin: 0 auto;
       border-bottom: none;
-      color: var(--color-dos);
+      color: #ffffff;
+  }
+
+  @media (min-width: 768px) {
+    div.texto-covid h2{
+      font-size: 7rem;
+    }
   }
 
   div.texto-covid i {
@@ -619,10 +627,10 @@
   }
 
   div.texto-covid p {
-      color: var(--color-cuatro);
+      color: #ffffff;
       line-height: 5rem;
-      font-family: 'Pt Sans', sans-serif;
-      font-weight: 600;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: extralight;
   }
 
 
@@ -631,25 +639,24 @@
 
   section.galeria-index {
       padding: 2rem;
-      background-color: #E3CFB0;
+      background-color: var(--color-nueve);
       text-align: center;
-      -webkit-box-shadow: 0px -9px 14px 0px rgba(50, 50, 50, 0.71);
-      -moz-box-shadow: 0px -9px 14px 0px rgba(50, 50, 50, 0.71);
-      box-shadow: 0px -9px 14px 0px rgba(50, 50, 50, 0.71);
+
   }
 
   section.galeria-index h2 {
       text-align: center;
       color: var(--color-dos);
       font-weight: 400;
-      margin: 1rem auto 3rem auto;
+      font-size: 5rem;
+      margin: 3rem auto 3rem auto;
       border: none;
   }
 
   section.galeria-index i {
       margin-left: 2rem;
       font-size: 4rem;
-      color: #D67D05;
+      color: #ffffff;
   }
 
   section.galeria-index a:hover {
@@ -715,9 +722,10 @@
 
   section.galeria-principal h1 {
       text-align: center;
-      color: #DBB530;
+      color: var(--color-nueve);
       border-bottom: 1px solid #C8BB8B;
-      font-family: 'Libre Baskerville', serif;
+      font-family: 'Bebas Neue', serif;
+      font-size: 7rem;
       font-weight: 400;
       text-transform: Uppercase;
   }
@@ -760,10 +768,15 @@
       }
   }
 
+  div.galeria-texto a:hover{
+    background-color: var(--color-nueve);
+    border: 1px solid var(--color-dos);
+  }
+
   /*Contacto*/
 
   section.contacto {
-      margin: 0 0 6rem 0;
+      margin: 0;
       position: relative;
       height: auto;
       display: flex;
@@ -783,19 +796,7 @@
       content: '';
   }
 
-  .parallax::before {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-position: center center;
-      background-attachment: fixed;
-      -webkit-filter: brightness(0.8);
-      filter: brightness(0.4);
-  }
+
 
   div.tabla-contactos {
       text-align: center;
@@ -884,7 +885,7 @@
   /* Footer */
 
   footer {
-      background: var(--color-cinco);
+      background: var(--color-nueve);
       height: auto;
       text-align: center;
   }
@@ -1000,7 +1001,7 @@
 
   div.servicio-unico i {
       font-size: 8rem;
-      color: var(--color-uno);
+      color: var(--color-nueve);
   }
 
   div.servicio-unico ul {
@@ -1045,7 +1046,7 @@
   /*Navegación Interna*/
 
   section.barra-interna {
-      background-color: #353535;
+      background-color: var(--color-dos);
   }
 
   /* Iconos Font Awesome */
@@ -1073,7 +1074,6 @@
 
   section.seccion-casa h2 {
       text-align: center;
-      border-bottom: 1px solid #C8BB8B;
       padding: 2rem 0;
   }
 
@@ -1089,11 +1089,20 @@
       margin-right: 3rem;
   }
 
-  div.casa-data ul li {
+  div.casa-data p{
+      font-family: 'Libre Baskerville',serif;
+      font-size: 2rem;
+
+  }
+
+
+  div.casa-data ul li{
       list-style: none;
       line-height: 4rem;
       font-size: 2.2rem;
-      font-weight: 700;
+      font-family:'Montserrat', serif;
+      color: var(--color-dos);
+
   }
 
   div.imagenes img {
@@ -1107,7 +1116,7 @@
 
   section.cita-container {
       margin-top: 5rem;
-      background-color: #5f9ea0;
+      background-color:var(--color-dos);
       height: auto;
   }
 
