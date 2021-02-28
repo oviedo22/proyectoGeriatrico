@@ -331,11 +331,16 @@
       color: var(--color-dos);
   }
 
+  div.texto-nosotros p.frase{
+      font-size: 3rem;
+  }
+
   div.texto-nosotros p span {
       font-weight: bold;
       font-style: italic;
       color: var(--color-cuatro);
   }
+
 
   div.imagen-nosotros {
       width: 70%;
@@ -481,6 +486,7 @@
       font-weight: 400;
       font-size: 6rem;
       margin: 2rem auto;
+      color:var(--color-dos);
   }
 
   @media (min-width: 768px) {
@@ -551,7 +557,7 @@
       section.contenedor-mapa {
           display: flex;
           justify-content: space-between;
-          align-items: flex-start;
+          align-items: center;
       }
 
       div.texto-mapa {
@@ -1075,6 +1081,7 @@
   section.seccion-casa h2 {
       text-align: center;
       padding: 2rem 0;
+      color: var(--color-dos);
   }
 
   @media (min-width: 768px) {
