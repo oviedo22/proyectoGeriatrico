@@ -1094,6 +1094,7 @@
 
   div.casa-data {
       margin-right: 3rem;
+      flex-basis:calc(100%);
   }
 
   div.casa-data p{
@@ -1110,6 +1111,10 @@
       font-family:'Montserrat', serif;
       color: var(--color-dos);
 
+  }
+
+  div.imagenes{
+    flex-basis:calc(100%);
   }
 
   div.imagenes img {
